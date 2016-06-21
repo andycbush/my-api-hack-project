@@ -43,15 +43,7 @@ Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
 
-#myHeaderh1 {
-    background-image: url("../img/transparent.jpg");
-    font-size: 2em;
-    background-color: ;
-    color: blue;
-    background-position: center center;
-    text-align: center;
-    height: 50px;
-}
+#myHeaderh1 {}
 
 
 /* -------------------------------------
@@ -59,11 +51,13 @@ Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
 
-#main {
+#main,
+#userInput {
     background-image: url("../img/transparent.jpg");
     border-radius: 0.5rem;
     padding: 2rem;
     width: 34rem;
+    margin-top: 2.5em;
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -71,16 +65,39 @@ Content styles (Main Module)
     color: white;
 }
 
-#fact {
+#main p {
+    font-size: 1.2em;
+}
+
+#myTitle {
+    font-size: 2em;
+}
+
+#myNum {
+    padding-left: .4em;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    border-radius: 0.5rem;
+}
+
+#myButton {
+    margin-left: .5em;
+    padding: .5em;
+    border-radius: 0.5rem;
+}
+
+#hack {
     background-image: url("../img/transparent.jpg");
     border-radius: 0.5rem;
     padding: 2rem;
     width: 34rem;
+    margin-top: 2.5em;
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     color: white;
+    font-size: 1.2em;
 }
 
 

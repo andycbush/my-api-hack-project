@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>API Hack</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-<header id="myHeader">
-    <h1 id="myHeaderh1">My API Hack</h1>
-</header>
-<section id="main">
-    <div>
-        <h1>Enter a number for a random number based fact.</h1>
-    </div>
-</section>
+
+    <section id="main">
+        <div>
+            <h1 id="myTitle">My Numbers API Hack</h1>
+            <p>Enter a number below for some number based trivia facts.</p>
+        </div>
+    </section>
+    <section id="userInput">
+        <form id="userNumber">
+            <input id="myNum" type="text" placeholder='enter a number here' name="tags" size="15" autofocus required>
+            <input id="myButton" type="submit" value="Submit">
+        </form>
+    </section>
+    <section id="hack">
+        <span id="number"></span>
+
+    </section>
 
 
- <script src="app.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="app1.js"></script>
 </body>
+
 </html>
