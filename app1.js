@@ -11,13 +11,14 @@
 $(document).ready(function () {
 
 
-
+    $('#hack').hide();
 
 
     $('#myButton').click(function (event) {
         event.preventDefault();
         var num = $('#myNum').val();
         getAPIResults(num);
+        $('#hack').show();
     });
 
     function showNumber(str) {
@@ -31,7 +32,10 @@ $(document).ready(function () {
         });
     };
 
+
+
     function showAPIResults() {
 
     }
+
 });
