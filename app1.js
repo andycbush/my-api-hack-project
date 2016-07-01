@@ -2,6 +2,20 @@
 //var num; //variable to hold user entered number
 
 //define functions
+function showNumber(str) {
+    document.getElementById('number-fact').innerText = str;
+}
+
+function getAPIResults(num) {
+
+    $.get('http://numbersapi.com/' + num + '/trivia?notfound=floor&fragment', function (data) {
+        $('#number').text(data);
+    });
+};
+
+function showAPIResults() {
+
+}
 
 //call functions
 
@@ -21,21 +35,12 @@ $(document).ready(function () {
         $('#hack').show();
     });
 
-    function showNumber(str) {
-        document.getElementById('number-fact').innerText = str;
-    }
+    showNumber(str);
 
-    function getAPIResults(num) {
+    getAPIResults(num);
 
-        $.get('http://numbersapi.com/' + num + '/trivia?notfound=floor&fragment', function (data) {
-            $('#number').text(data);
-        });
-    };
+    showAPIResults();
 
 
-
-    function showAPIResults() {
-
-    }
 
 });
