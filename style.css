@@ -53,7 +53,7 @@ Content styles (Main Module)
 
 #main,
 #userInput {
-    background-image: url("../img/transparent.jpg");
+    background-image: url("img/transparent.jpg");
     border-radius: 0.5rem;
     padding: 2rem;
     width: 34rem;
@@ -87,7 +87,7 @@ Content styles (Main Module)
 }
 
 #hack {
-    background-image: url("../img/transparent.jpg");
+    background-image: url("img/transparent.jpg");
     border-radius: 0.5rem;
     padding: 2rem;
     width: 34rem;
