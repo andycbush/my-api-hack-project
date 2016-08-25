@@ -28,7 +28,7 @@ General styles (General Module, wrapping around the modules bellow)
 */
 
 html {
-    background: rgba(0, 0, 0, 0) url("https://pixabay.com/static/uploads/photo/2015/09/13/10/06/pay-937882_960_720.jpg") no-repeat center center fixed;
+    background: rgba(0, 0, 0, 0) url("img/random-dice.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
