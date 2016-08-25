@@ -8,7 +8,7 @@ function showNumber(str) {
 
 function getAPIResults(num) {
 
-    $.get('http://numbersapi.com/' + num + '/trivia?notfound=floor&fragment', function (data) {
+    $.get('https://numbersapi.com/' + num + '/trivia?notfound=floor&fragment', function (data) {
         $('#number').text(data);
     });
 };
