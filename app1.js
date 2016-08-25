@@ -3,12 +3,12 @@
 
 //define functions
 function showNumber(str) {
-    document.getElementById('number-fact').innerText = str;
+    str = document.getElementById('number-fact').innerText;
 }
 
 function getAPIResults(num) {
 
-    $.get('https://numbersapi.com/' + num + '/trivia?notfound=floor&fragment', function (data) {
+    $.get('http://numbersapi.com/' + num + '/trivia?notfound=floor&fragment', function (data) {
         $('#number').text(data);
     });
 };
