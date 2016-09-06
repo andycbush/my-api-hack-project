@@ -1,5 +1,7 @@
 //define global variables
 //var num; //variable to hold user entered number
+var str;
+
 
 //define functions
 function showNumber(str) {
