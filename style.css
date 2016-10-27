@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* -------------------------------------
 CSS reset
 (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
@@ -121,3 +122,120 @@ Responsive styles
 (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 place all the mobile tables styles bellow this line
 */
+=======
+/* -------------------------------------
+CSS reset
+(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/* -------------------------------------
+General styles (General Module, wrapping around the modules bellow)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+html {
+    background: rgba(0, 0, 0, 0) url("img/random-dice.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {}
+
+
+/* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+
+#myHeaderh1 {}
+
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+#main,
+#userInput {
+    background-image: url("img/transparent.jpg");
+    border-radius: 0.5rem;
+    padding: 2rem;
+    width: 34rem;
+    margin-top: 2.5em;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+}
+
+#main p {
+    font-size: 1.2em;
+}
+
+#myTitle {
+    font-size: 2em;
+}
+
+#myNum {
+    padding-left: .4em;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    border-radius: 0.5rem;
+}
+
+#myButton {
+    margin-left: .5em;
+    padding: .5em;
+    border-radius: 0.5rem;
+}
+
+#hack {
+    background-image: url("img/transparent.jpg");
+    border-radius: 0.5rem;
+    padding: 2rem;
+    width: 34rem;
+    margin-top: 2.5em;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+/* -------------------------------------
+Footer styles (Main Module)
+(all the styles inside the < footer > tag)
+*/
+
+
+/* -------------------------------------
+place all the desktop styles above this line
+Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+place all the mobile tables styles bellow this line
+*/
+>>>>>>> origin/gh-pages
