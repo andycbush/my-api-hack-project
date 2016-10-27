@@ -1,9 +1,9 @@
 //define global variables
 //var num; //variable to hold user entered number
-var str;
-
 
 //define functions
+
+//start first api call
 function showNumber(str) {
     str = document.getElementById('number-fact').innerText;
 }
@@ -18,6 +18,41 @@ function getAPIResults(num) {
 function showAPIResults() {
 
 }
+//end first api call
+
+//start 2nd api call
+function showRandomNumber(strRandom) {
+    strRandom = document.getElementById('number-fact').innerText;
+}
+
+function getRandomAPIResults(randomNum) {
+
+    $.get('http://numbersapi.com/random/trivia', function (data) {
+        $('#theRandom').text(data);
+    });
+};
+
+function showRandomAPIResults() {
+
+}
+//end 2nd api call
+
+//start 3rd api call
+function showDate(strDate) {
+    strDate = document.getElementById('number-fact').innerText;
+}
+
+function getDate(theDate) {
+
+    $.get('http://numbersapi.com/' + theDate + '/date?notfound=floor&fragment', function (data) {
+        $('#theDate').text(data);
+    });
+};
+
+function showDateResults() {
+
+}
+//end 3rd api cll
 
 //call functions
 
@@ -28,7 +63,8 @@ $(document).ready(function () {
 
 
     $('#hack').hide();
-
+    $('#hackRandom').hide();
+    $('#hackDate').hide();
 
     $('#myButton').click(function (event) {
         event.preventDefault();
@@ -37,12 +73,31 @@ $(document).ready(function () {
         $('#hack').show();
     });
 
+    $('#myRandomButton').click(function (event) {
+        event.preventDefault();
+        var randomNum = $('#myRandom').val();
+        getRandomAPIResults(randomNum);
+        $('#hackRandom').show();
+    });
+
+    $('#myDateButton').click(function (event) {
+        event.preventDefault();
+        var theDate = $('#myDate').val();
+        getDate(theDate);
+        $('#hackDate').show();
+    });
+
     showNumber(str);
+    showRandomNumber(strRandom);
+    showDate(strDate);
 
     getAPIResults(num);
+    getRandomAPIResults(randomNum);
+    getDate(theDate);
 
     showAPIResults();
-
+    showRandomAPIResults();
+    showDateResults();
 
 
 });

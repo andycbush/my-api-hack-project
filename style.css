@@ -52,7 +52,9 @@ Content styles (Main Module)
 */
 
 #main,
-#userInput {
+#userInput,
+#random,
+#userDate {
     background-image: url("img/transparent.jpg");
     border-radius: 0.5rem;
     padding: 2rem;
@@ -73,20 +75,26 @@ Content styles (Main Module)
     font-size: 2em;
 }
 
-#myNum {
+#myNum,
+#myRandom,
+#myDate {
     padding-left: .4em;
     padding-top: .4em;
     padding-bottom: .4em;
     border-radius: 0.5rem;
 }
 
-#myButton {
+#myButton,
+#myRandomButton,
+#myDateButton {
     margin-left: .5em;
     padding: .5em;
     border-radius: 0.5rem;
 }
 
-#hack {
+#hack,
+#hackRandom,
+#hackDate {
     background-image: url("img/transparent.jpg");
     border-radius: 0.5rem;
     padding: 2rem;
