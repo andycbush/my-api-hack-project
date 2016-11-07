@@ -27,7 +27,7 @@ function showRandomNumber(strRandom) {
 
 function getRandomAPIResults(randomNum) {
 
-    $.get('http://numbersapi.com/random/trivia', function (data) {
+    $.get('https://crossorigin.me/http://numbersapi.com/random/trivia', function (data) {
         $('#theRandom').text(data);
     });
 };
@@ -44,7 +44,7 @@ function showDate(strDate) {
 
 function getDate(theDate) {
 
-    $.get('http://numbersapi.com/' + theDate + '/date?notfound=floor&fragment', function (data) {
+    $.get('https://crossorigin.me/http://numbersapi.com/' + theDate + '/date?notfound=floor&fragment', function (data) {
         $('#theDate').text(data);
     });
 };
