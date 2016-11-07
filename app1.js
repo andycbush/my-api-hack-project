@@ -19,7 +19,7 @@ function showAPIResults() {
 
 //call functions
 
-//Step 1 - get user input
+//Step 1 - get user input//
 
 
 $(document).ready(function () {
